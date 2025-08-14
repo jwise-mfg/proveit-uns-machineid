@@ -1,0 +1,27 @@
+{
+  "MachineIdentificationType": {
+    "GroupIdentifier": "Object - OPC Grouping Type, safe to omit",
+    "AssetId": "String - Unique ID in context of the current system.",
+    "ComponentName": "String - Used by end users to store a human-readable localized name",
+    "DefaultInstanceBrowseName": "FQN - The default BrowseName (in MQTT could be the full topic string)",
+    "DeviceClass": "String - Indicates domain or purpose of Device",
+    "DeviceManual": "String - URL or location of user manual",
+    "DeviceRevision": "String - Indicates version or year of make of machine",
+    "HardwareRevision": "String Indicates hardware variation",
+    "InitialOperationDate": "DateTime - When machine first went into operation",
+    "Location": "String - Physical location of machine",
+    "Manufacturer": "String (LocalizedText) - Human-readable name of creator of machine",
+    "ManufacturerUri": "String - Globally unique identifier for creator of machine",
+    "ProductInstanceUri": "String - Globally unique identifier for the model of the machine",
+    "Model": "String - Manufacturer's model name for machine",
+    "MonthOfConstruction": "Int - The month in which the machine was produced",
+    "YearOfConstruction": "Int - The year in which the machine was produced",
+    "PatchIdentifiers": "String[] - Used to identify on-site revisions to the hardware",
+    "RevisionCounter": "Int - Used to identify how many on-site revisions have been made to the hardware",
+    "ProductCode": "String - Identifier used in other systems, such as ERP or CMMS",
+    "SerialNumber": "String - Machine's serial number",
+    "SoftwareReleaseDate": "DateTime - Currently running software or firmware release date.",
+    "SoftwareRevision": "String - A string representing the version of the currently running software or firmware",
+    "UI Element": "String - We can use to bind user interface elements to the machine data (eg: the name of a faceplate to load)"
+  }
+}

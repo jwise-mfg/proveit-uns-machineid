@@ -1,0 +1,23 @@
+Prompts that made this:
+
+1. /init
+
+2. generate some simple python code with minimal dependencies that creates sample payloads for each machine type specified in the readme, using the machineidentificationtype description and schema files to determine what values make sense to include. the manufacturer and manufacturer URI should be related to each other in each payload. you can make up model names for each payload, but try to make them seem like real machine names for the type of machine you're generating the payload for. All machines should have been constructed within the last 20 years, and put into operation within the last 10 years. the operation date must be more recent than the construction date.
+
+3. split the sample_machine_payloads.json into a separate json for each machine type
+
+4. put the machine jsons in their own folder, update generate_sample_payloads to output individual files to that folder
+
+5. update claude.md and readme.md to reflect this new functionality
+
+6. update generate_sample_payloads.py to take a machine type as an optional argument. if the argument is supplied, pretty print the generated payload to the console instead of writing to a file.
+
+7. command line arguments for generate_sample_payloads.py should not be case-sensitive.
+
+8. update generate_sample_payloads.py to take a second optional command line argument for number of payloads to generate. each payload should be seperated during output to make it easy to tell where one payloads ends and the next begins.
+
+9. i removed the long equal sign separator as it was superfluous. please update readme.md and claude.md for context and to help future users.
+
+10. remove the functionality to output to sample_machine_payloads.json and update the readme and claude files
+
+11. save all my prompts for this session into a file in this project called prompts.txt

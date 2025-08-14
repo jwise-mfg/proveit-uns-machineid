@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "MachineIdentificationType": {
+      "type": "object",
+      "properties": {
+        "GroupIdentifier": {
+          "type": "object"
+        },
+        "AssetId": {
+          "type": "string"
+        },
+        "ComponentName": {
+          "type": "string"
+        },
+        "DefaultInstanceBrowseName": {
+          "type": "string"
+        },
+        "DeviceClass": {
+          "type": "string"
+        },
+        "DeviceManual": {
+          "type": "string"
+        },
+        "DeviceRevision": {
+          "type": "string"
+        },
+        "HardwareRevision": {
+          "type": "string"
+        },
+        "InitialOperationDate": {
+          "type": "string"
+        },
+        "Location": {
+          "type": "string"
+        },
+        "Manufacturer": {
+          "type": "string"
+        },
+        "ManufacturerUri": {
+          "type": "string"
+        },
+        "ProductInstanceUri": {
+          "type": "string"
+        },
+        "Model": {
+          "type": "string"
+        },
+        "MonthOfConstruction": {
+          "type": "integer"
+        },
+        "YearOfConstruction": {
+          "type": "integer"
+        },
+        "PatchIdentifiers": {
+          "type": "array"
+        },
+        "RevisionCounter": {
+          "type": "int"
+        },
+        "ProductCode": {
+          "type": "string"
+        },
+        "SerialNumber": {
+          "type": "string"
+        },
+        "SoftwareReleaseDate": {
+          "type": "string"
+        },
+        "SoftwareRevision": {
+          "type": "string"
+        },
+        "UI Element": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "AssetId",
+        "ComponentName",
+        "DefaultInstanceBrowseName",
+        "DeviceClass",
+        "DeviceManual",
+        "DeviceRevision",
+        "Location",
+        "Manufacturer",
+        "ManufacturerUri",
+        "Model",
+        "YearOfConstruction",
+        "ProductCode",
+        "SerialNumber",
+        "SoftwareReleaseDate",
+        "SoftwareRevision"
+      ]
+    }
+  },
+  "required": [
+    "MachineIdentificationType"
+  ]
+}

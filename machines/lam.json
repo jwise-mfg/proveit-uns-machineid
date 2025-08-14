@@ -1,0 +1,29 @@
+{
+  "MachineIdentificationType": {
+    "AssetId": "LAM-1410",
+    "ComponentName": "Laminator LAM-1410",
+    "DefaultInstanceBrowseName": "/Lam/LAM-1410",
+    "DeviceClass": "Industrial Laminator",
+    "DeviceManual": "https://www.bobst.com/manuals/novacut-106-e",
+    "DeviceRevision": "Rev-4.4",
+    "HardwareRevision": "HW-2.8",
+    "InitialOperationDate": "2024-04-19T15:40:03.393987Z",
+    "Location": "Production Floor A",
+    "Manufacturer": "BOBST Group SA",
+    "ManufacturerUri": "https://www.bobst.com",
+    "ProductInstanceUri": "https://www.bobst.com/products/novacut-106-e",
+    "Model": "NOVACUT 106 E",
+    "MonthOfConstruction": 3,
+    "YearOfConstruction": 2022,
+    "PatchIdentifiers": [
+      "PATCH-823",
+      "PATCH-957"
+    ],
+    "RevisionCounter": 3,
+    "ProductCode": "PC-NOVACUT-106-E-258",
+    "SerialNumber": "BOB695373",
+    "SoftwareReleaseDate": "2022-03-19T15:40:03.393987Z",
+    "SoftwareRevision": "SW-9.1.4",
+    "UI Element": "lam_control_panel_lam-1410"
+  }
+}

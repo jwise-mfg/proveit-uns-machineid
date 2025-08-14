@@ -1,0 +1,30 @@
+{
+  "MachineIdentificationType": {
+    "AssetId": "BAG-2476",
+    "ComponentName": "Bag Machine BAG-2476",
+    "DefaultInstanceBrowseName": "/Bag/BAG-2476",
+    "DeviceClass": "Industrial Bag Machine",
+    "DeviceManual": "https://www.comexi.com/manuals/f2-mb-flexo",
+    "DeviceRevision": "Rev-1.5",
+    "HardwareRevision": "HW-2.4",
+    "InitialOperationDate": "2023-07-29T15:40:03.394596Z",
+    "Location": "Manufacturing Line 1",
+    "Manufacturer": "Comexi Group",
+    "ManufacturerUri": "https://www.comexi.com",
+    "ProductInstanceUri": "https://www.comexi.com/products/f2-mb-flexo",
+    "Model": "F2 MB flexo",
+    "MonthOfConstruction": 4,
+    "YearOfConstruction": 2011,
+    "PatchIdentifiers": [
+      "PATCH-392",
+      "PATCH-708",
+      "PATCH-354"
+    ],
+    "RevisionCounter": 0,
+    "ProductCode": "PC-F2-MB-FLEXO-257",
+    "SerialNumber": "COM387937",
+    "SoftwareReleaseDate": "2025-05-18T15:40:03.394599Z",
+    "SoftwareRevision": "SW-4.0.2",
+    "UI Element": "bag_control_panel_bag-2476"
+  }
+}

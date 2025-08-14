@@ -1,0 +1,26 @@
+{
+  "MachineIdentificationType": {
+    "AssetId": "SLIT-6626",
+    "ComponentName": "Slitter SLIT-6626",
+    "DefaultInstanceBrowseName": "/Slit/SLIT-6626",
+    "DeviceClass": "Industrial Slitter",
+    "DeviceManual": "https://www.atlasconverting.com/manuals/titan-sr8",
+    "DeviceRevision": "Rev-4.0",
+    "HardwareRevision": "HW-1.0",
+    "InitialOperationDate": "2025-06-17T15:40:03.394339Z",
+    "Location": "Assembly Bay 3",
+    "Manufacturer": "Atlas Converting Equipment Ltd.",
+    "ManufacturerUri": "https://www.atlasconverting.com",
+    "ProductInstanceUri": "https://www.atlasconverting.com/products/titan-sr8",
+    "Model": "Titan SR8",
+    "MonthOfConstruction": 4,
+    "YearOfConstruction": 2008,
+    "PatchIdentifiers": [],
+    "RevisionCounter": 3,
+    "ProductCode": "PC-TITAN-SR8-631",
+    "SerialNumber": "ATL807490",
+    "SoftwareReleaseDate": "2023-01-12T15:40:03.394342Z",
+    "SoftwareRevision": "SW-6.9.6",
+    "UI Element": "slit_control_panel_slit-6626"
+  }
+}
