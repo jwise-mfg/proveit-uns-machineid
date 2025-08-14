@@ -3,11 +3,11 @@
 This project reflects the VDMA standard Machine Building Block for Machine Identification as JSON. 
 The included python scripts generate payloads that can be included in a MQTT broker. 
 
-- To learn more about the VDMA Machine Building block standards, please visit [umati.org](https://umati.org/industries_machinery/)
 - To join the community advocating for, and helping to improve, open industrial information standards, please visit [cesmii.org](https://www.cesmii.org)
+- To learn more about the VDMA Machine Building Block standards, please visit [umati.org](https://umati.org/industries_machinery/)
 - To attend the next ProveIt event, check out [proveitconference.com](https://www.proveitconference.com/)
-- Vibe coded by Jonathan Wise and Claude -- you can see the prompts I used to build this project in [prompts.txt](prompts.txt)
 - Need help standardizing your UNS or other information models? Visit [theoremsystems.com](https://www.theoremsystems) or look me up on LinkedIn!
+- Vibe coded by Jonathan Wise and Claude -- you can see the prompts I used to build this project in [prompts.txt](prompts.txt)
 
 ## Usage
 
