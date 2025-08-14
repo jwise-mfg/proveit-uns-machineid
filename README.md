@@ -11,6 +11,8 @@ The included python scripts generate payloads that can be included in a MQTT bro
 
 ## Usage
 
+This project requires a recent version of Python3 and has no other dependencies.
+
 Run the Python script to generate new sample payloads:
 
 ```bash
