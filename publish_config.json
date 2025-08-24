@@ -3,7 +3,7 @@
     "host": "cesmii.net",
     "port": 1883,
     "username": "cesmiiuser",
-    "password": "i3x",
+    "password": "<PASSWORD>",
     "client_id": "MachineBasicBuilingsBlocksPublisher",
     "keepalive": 60,
     "qos": 0,
