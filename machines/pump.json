@@ -1,0 +1,28 @@
+{
+  "MachineIdentificationType": {
+    "AssetId": "PUMP-5898",
+    "ComponentName": "Pump PUMP-5898",
+    "DefaultInstanceBrowseName": "/Pump/PUMP-5898",
+    "DeviceClass": "Industrial Pump",
+    "DeviceManual": "https://www.grundfos.com/manuals/cr-32-4-2",
+    "DeviceRevision": "Rev-2.6",
+    "HardwareRevision": "HW-2.9",
+    "InitialOperationDate": "2025-03-03T16:01:31.358688Z",
+    "Location": "Processing Unit 2",
+    "Manufacturer": "Grundfos Holding A/S",
+    "ManufacturerUri": "https://www.grundfos.com",
+    "ProductInstanceUri": "https://www.grundfos.com/products/cr-32-4-2",
+    "Model": "CR 32-4-2",
+    "MonthOfConstruction": 12,
+    "YearOfConstruction": 2022,
+    "PatchIdentifiers": [
+      "PATCH-412"
+    ],
+    "RevisionCounter": 3,
+    "ProductCode": "PC-CR-32-4-2-314",
+    "SerialNumber": "GRU110151",
+    "SoftwareReleaseDate": "2024-01-21T16:01:31.358688Z",
+    "SoftwareRevision": "SW-1.9.3",
+    "UI Element": "pump_control_panel_pump-5898"
+  }
+}

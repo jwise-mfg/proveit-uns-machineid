@@ -11,7 +11,13 @@ The included python scripts generate payloads that can be included in a MQTT bro
 
 ## Usage
 
-This project requires a recent version of Python3 and has no other dependencies.
+This project requires a recent version of Python3. For MQTT publishing functionality, install the `paho-mqtt` library:
+
+```bash
+pip3 install paho-mqtt
+```
+
+### Sample Payload Generation
 
 Run the Python script to generate new sample payloads:
 
@@ -24,10 +30,15 @@ python3 generate_sample_payloads.py press
 python3 generate_sample_payloads.py lam
 python3 generate_sample_payloads.py slit  
 python3 generate_sample_payloads.py bag
+python3 generate_sample_payloads.py pump
+python3 generate_sample_payloads.py pumping_station
+python3 generate_sample_payloads.py tank
 
 # Generate multiple payloads of the same type (outputs to console)
 python3 generate_sample_payloads.py press 3
 python3 generate_sample_payloads.py lam 5
+python3 generate_sample_payloads.py pump 2
+python3 generate_sample_payloads.py tank 4
 ```
 
 **Output Options:**
@@ -39,6 +50,38 @@ python3 generate_sample_payloads.py lam 5
 - Machine type arguments are case-insensitive (`press`, `PRESS`, `Press` all work)
 - Generated payloads include realistic manufacturer data, model names, and date constraints
 - Multiple payloads are clearly separated with headers for easy parsing
+
+### MQTT Publishing
+
+Publish machine identification payloads to an MQTT broker using configuration files:
+
+```bash
+# Publish using default configuration (publish_config.json)
+python3 publish_machineid.py
+
+# Use custom configuration file
+python3 publish_machineid.py my_config.json
+
+# Test without actually publishing (dry-run mode)
+python3 publish_machineid.py --dry-run
+
+# Verbose output for debugging
+python3 publish_machineid.py -v
+
+# Combine options
+python3 publish_machineid.py --dry-run -v my_config.json
+```
+
+**MQTT Features:**
+- Configuration-driven broker connection (host, port, credentials, QoS settings)
+- Automatic topic wrapper detection and removal
+- Retry logic with configurable attempts and delays
+- Dry-run mode for testing configurations
+- Support for multiple machines in a single configuration
+- Verbose logging for troubleshooting
+
+**Topic Wrapper Handling:**
+Topics ending with `MachineIdentificationType` automatically have the outer JSON wrapper removed before publishing, ensuring clean payload structure that matches the topic semantics.
 
 ## Broker Implementation
 
@@ -83,10 +126,40 @@ The following information was provided by Walker Reynolds describing the existin
 2. Laminator
 3. Slitter
 4. Bag Machine
+5. Pump
+6. Pumping Station
+7. Tank
 
 ### MQTT Topics
 
-1. Press
-2. Lam
-3. Slit
-4. Bag
+The following machine types map to these MQTT topic identifiers:
+
+1. Press (Printing Press)
+2. Lam (Laminator)
+3. Slit (Slitter)
+4. Bag (Bag Machine)
+5. Pump (Simple Pump)
+6. Pumping_Station (Complex Pump/Pumping Station)
+7. Tank (Liquid Storage Tank)
+
+**Example Configuration:**
+```json
+{
+  "mqtt_broker": {
+    "host": "your-broker.com",
+    "port": 1883,
+    "username": "your-username",
+    "password": "your-password"
+  },
+  "machines": [
+    {
+      "type": "pump",
+      "topic": "factory/utilities/water-system/pump-101/MachineIdentificationType"
+    },
+    {
+      "type": "tank",
+      "topic": "factory/storage/tank-201/MachineIdentificationType"
+    }
+  ]
+}
+```

@@ -60,6 +60,26 @@ manufacturers = {
     "starlinger": {
         "name": "Starlinger & Co GmbH",
         "uri": "https://www.starlinger.com"
+    },
+    "grundfos": {
+        "name": "Grundfos Holding A/S",
+        "uri": "https://www.grundfos.com"
+    },
+    "ksb": {
+        "name": "KSB SE & Co. KGaA",
+        "uri": "https://www.ksb.com"
+    },
+    "pentair": {
+        "name": "Pentair plc",
+        "uri": "https://www.pentair.com"
+    },
+    "caldwell": {
+        "name": "Caldwell Tanks Inc.",
+        "uri": "https://www.caldwelltanks.com"
+    },
+    "cb_i": {
+        "name": "CB&I Storage Solutions",
+        "uri": "https://www.cbi.com"
     }
 }
 
@@ -80,6 +100,18 @@ machine_models = {
     "Bag": {
         "starlinger": ["type recoSTAR PET 330 HC iV+", "type recycling line PET", "type recoSTAR universal 165 iV+"],
         "comexi": ["CT flexo CI8", "ML combi", "F2 MB flexo"]
+    },
+    "Pump": {
+        "grundfos": ["CR 32-4-2", "TPE 32-120/4", "NK 65-125/124"],
+        "ksb": ["Omega 65-125", "Etanorm 65-125", "Multitec 40/4"]
+    },
+    "Pumping_Station": {
+        "grundfos": ["Hydro MPC-S 3 CR32", "Hydro Multi-E 3 CR64", "Hydro Multi-S P 3CR32"],
+        "pentair": ["Aurora 408GT", "Pentair Myers 3085", "Berkeley B4FRBM"]
+    },
+    "Tank": {
+        "caldwell": ["Pedesphere 100000", "Freedom 75000", "Aquastore 50000"],
+        "cb_i": ["Fixed Roof 200000", "Floating Roof 500000", "Pressure Vessel 25000"]
     }
 }
 
@@ -107,7 +139,10 @@ def generate_machine_payload(machine_type, mqtt_topic):
         "Press": "Printing Press",
         "Lam": "Laminator", 
         "Slit": "Slitter",
-        "Bag": "Bag Machine"
+        "Bag": "Bag Machine",
+        "Pump": "Pump",
+        "Pumping_Station": "Pumping Station",
+        "Tank": "Tank"
     }
     display_name = machine_display_names[machine_type]
     
@@ -151,11 +186,14 @@ def main():
                '  python3 generate_sample_payloads.py press 3   # Generate 3 Printing Press payloads\n'
                '  python3 generate_sample_payloads.py LAM 5     # Generate 5 Laminator payloads\n'
                '  python3 generate_sample_payloads.py Slit      # Generate 1 Slitter payload\n'
-               '  python3 generate_sample_payloads.py bag 2     # Generate 2 Bag Machine payloads',
+               '  python3 generate_sample_payloads.py bag 2     # Generate 2 Bag Machine payloads\n'
+               '  python3 generate_sample_payloads.py pump      # Generate 1 Pump payload\n'
+               '  python3 generate_sample_payloads.py pumping_station 3  # Generate 3 Pumping Station payloads\n'
+               '  python3 generate_sample_payloads.py tank 2    # Generate 2 Tank payloads',
         formatter_class=argparse.RawDescriptionHelpFormatter
     )
     parser.add_argument('machine_type', nargs='?', 
-                       help='Specific machine type to generate (press, lam, slit, bag - case insensitive)')
+                       help='Specific machine type to generate (press, lam, slit, bag, pump, pumping_station, tank - case insensitive)')
     parser.add_argument('count', nargs='?', type=int, default=1,
                        help='Number of payloads to generate (default: 1)')
     
@@ -165,14 +203,20 @@ def main():
         ("Press", "Press"),
         ("Lam", "Lam"),
         ("Slit", "Slit"),
-        ("Bag", "Bag")
+        ("Bag", "Bag"),
+        ("Pump", "Pump"),
+        ("Pumping_Station", "Pumping_Station"),
+        ("Tank", "Tank")
     ]
     
     machine_display_names = {
         "Press": "Printing Press",
         "Lam": "Laminator", 
         "Slit": "Slitter",
-        "Bag": "Bag Machine"
+        "Bag": "Bag Machine",
+        "Pump": "Pump",
+        "Pumping_Station": "Pumping Station",
+        "Tank": "Tank"
     }
     
     # Valid machine type mapping (case-insensitive)
@@ -180,7 +224,10 @@ def main():
         "press": "Press",
         "lam": "Lam", 
         "slit": "Slit",
-        "bag": "Bag"
+        "bag": "Bag",
+        "pump": "Pump",
+        "pumping_station": "Pumping_Station",
+        "tank": "Tank"
     }
     
     # Validate count parameter
@@ -192,7 +239,7 @@ def main():
     if args.machine_type:
         machine_input = args.machine_type.lower()
         if machine_input not in valid_machine_types:
-            print(f"Error: Invalid machine type '{args.machine_type}'. Valid options: press, lam, slit, bag (case insensitive)", file=sys.stderr)
+            print(f"Error: Invalid machine type '{args.machine_type}'. Valid options: press, lam, slit, bag, pump, pumping_station, tank (case insensitive)", file=sys.stderr)
             sys.exit(1)
         
         machine_type = valid_machine_types[machine_input]

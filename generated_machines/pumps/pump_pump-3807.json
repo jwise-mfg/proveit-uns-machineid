@@ -1,0 +1,26 @@
+{
+  "MachineIdentificationType": {
+    "AssetId": "PUMP-3807",
+    "ComponentName": "Pump PUMP-3807",
+    "DefaultInstanceBrowseName": "/Pump/PUMP-3807",
+    "DeviceClass": "Industrial Pump",
+    "DeviceManual": "https://www.grundfos.com/manuals/nk-65-125/124",
+    "DeviceRevision": "Rev-4.1",
+    "HardwareRevision": "HW-2.2",
+    "InitialOperationDate": "2018-12-20T16:06:28.700325Z",
+    "Location": "Assembly Bay 3",
+    "Manufacturer": "Grundfos Holding A/S",
+    "ManufacturerUri": "https://www.grundfos.com",
+    "ProductInstanceUri": "https://www.grundfos.com/products/nk-65-125/124",
+    "Model": "NK 65-125/124",
+    "MonthOfConstruction": 5,
+    "YearOfConstruction": 2014,
+    "PatchIdentifiers": [],
+    "RevisionCounter": 5,
+    "ProductCode": "PC-NK-65-125/124-462",
+    "SerialNumber": "GRU343837",
+    "SoftwareReleaseDate": "2025-04-30T16:06:28.700334Z",
+    "SoftwareRevision": "SW-9.9.4",
+    "UI Element": "pump_control_panel_pump-3807"
+  }
+}

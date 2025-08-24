@@ -1,0 +1,26 @@
+{
+  "MachineIdentificationType": {
+    "AssetId": "LAM-6051",
+    "ComponentName": "Laminator LAM-6051",
+    "DefaultInstanceBrowseName": "/Lam/LAM-6051",
+    "DeviceClass": "Industrial Laminator",
+    "DeviceManual": "https://www.atlasconverting.com/manuals/convert-o-matic",
+    "DeviceRevision": "Rev-2.3",
+    "HardwareRevision": "HW-1.6",
+    "InitialOperationDate": "2021-09-27T16:06:28.919824Z",
+    "Location": "Manufacturing Line 1",
+    "Manufacturer": "Atlas Converting Equipment Ltd.",
+    "ManufacturerUri": "https://www.atlasconverting.com",
+    "ProductInstanceUri": "https://www.atlasconverting.com/products/convert-o-matic",
+    "Model": "Convert-O-Matic",
+    "MonthOfConstruction": 11,
+    "YearOfConstruction": 2005,
+    "PatchIdentifiers": [],
+    "RevisionCounter": 0,
+    "ProductCode": "PC-CONVERT-O-MATIC-741",
+    "SerialNumber": "ATL776433",
+    "SoftwareReleaseDate": "2023-01-03T16:06:28.919832Z",
+    "SoftwareRevision": "SW-2.0.3",
+    "UI Element": "lam_control_panel_lam-6051"
+  }
+}

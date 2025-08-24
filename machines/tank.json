@@ -1,0 +1,26 @@
+{
+  "MachineIdentificationType": {
+    "AssetId": "TANK-1689",
+    "ComponentName": "Tank TANK-1689",
+    "DefaultInstanceBrowseName": "/Tank/TANK-1689",
+    "DeviceClass": "Industrial Tank",
+    "DeviceManual": "https://www.cbi.com/manuals/pressure-vessel-25000",
+    "DeviceRevision": "Rev-4.1",
+    "HardwareRevision": "HW-1.5",
+    "InitialOperationDate": "2019-01-14T16:01:31.360033Z",
+    "Location": "Processing Unit 2",
+    "Manufacturer": "CB&I Storage Solutions",
+    "ManufacturerUri": "https://www.cbi.com",
+    "ProductInstanceUri": "https://www.cbi.com/products/pressure-vessel-25000",
+    "Model": "Pressure Vessel 25000",
+    "MonthOfConstruction": 9,
+    "YearOfConstruction": 2017,
+    "PatchIdentifiers": [],
+    "RevisionCounter": 3,
+    "ProductCode": "PC-PRESSURE-VESSEL-25000-806",
+    "SerialNumber": "CB_281233",
+    "SoftwareReleaseDate": "2023-06-29T16:01:31.360033Z",
+    "SoftwareRevision": "SW-4.0.9",
+    "UI Element": "tank_control_panel_tank-1689"
+  }
+}

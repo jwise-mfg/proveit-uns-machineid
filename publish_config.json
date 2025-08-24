@@ -1,0 +1,39 @@
+{
+  "mqtt_broker": {
+    "host": "cesmii.net",
+    "port": 1883,
+    "username": "cesmiiuser",
+    "password": "i3x",
+    "client_id": "MachineBasicBuilingsBlocksPublisher",
+    "keepalive": 60,
+    "qos": 0,
+    "retain": false
+  },
+  "machines": [
+    {
+      "type": "pump",
+      "topic": "cesmiihq/plant1/utilities/water-system/pump-station/pump-101/MachineIdentificationType"
+    },
+    {
+      "type": "pump", 
+      "topic": "cesmiihq/plant1/utilities/water-system/pump-station/pump-102/MachineIdentificationType"
+    },
+    {
+      "type": "tank",
+      "topic": "cesmiihq/plant1/utilities/water-system/pump-station/tank-201/MachineIdentificationType"
+    },
+    {
+      "type": "pumping_station",
+      "topic": "cesmiihq/plant1/utilities/water-system/pump-station/pump-103/MachineIdentificationType"
+    },
+    {
+      "type": "tank",
+      "topic": "cesmiihq/plant1/utilities/water-system/pump-station/tank-202/MachineIdentificationType"
+    }
+  ],
+  "global_settings": {
+    "publish_timeout": 30,
+    "retry_attempts": 1,
+    "retry_delay": 1
+  }
+}

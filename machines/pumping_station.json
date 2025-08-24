@@ -1,0 +1,30 @@
+{
+  "MachineIdentificationType": {
+    "AssetId": "PUMPING_STATION-2047",
+    "ComponentName": "Pumping Station PUMPING_STATION-2047",
+    "DefaultInstanceBrowseName": "/Pumping_Station/PUMPING_STATION-2047",
+    "DeviceClass": "Industrial Pumping Station",
+    "DeviceManual": "https://www.pentair.com/manuals/aurora-408gt",
+    "DeviceRevision": "Rev-3.2",
+    "HardwareRevision": "HW-1.6",
+    "InitialOperationDate": "2022-05-08T16:01:31.359365Z",
+    "Location": "Production Floor A",
+    "Manufacturer": "Pentair plc",
+    "ManufacturerUri": "https://www.pentair.com",
+    "ProductInstanceUri": "https://www.pentair.com/products/aurora-408gt",
+    "Model": "Aurora 408GT",
+    "MonthOfConstruction": 12,
+    "YearOfConstruction": 2015,
+    "PatchIdentifiers": [
+      "PATCH-186",
+      "PATCH-660",
+      "PATCH-398"
+    ],
+    "RevisionCounter": 3,
+    "ProductCode": "PC-AURORA-408GT-433",
+    "SerialNumber": "PEN599638",
+    "SoftwareReleaseDate": "2017-04-09T16:01:31.359365Z",
+    "SoftwareRevision": "SW-9.4.9",
+    "UI Element": "pumping_station_control_panel_pumping_station-2047"
+  }
+}

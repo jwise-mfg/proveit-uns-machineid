@@ -21,3 +21,19 @@ Prompts that made this:
 10. remove the functionality to output to sample_machine_payloads.json and update the readme and claude files
 
 11. save all my prompts for this session into a file in this project called prompts.txt
+
+12. update this project to add three new types of equipment, a simple pump (just called a pump), a complex pump (called a pumping station) and a liquid storage tank (just called a tank). you'll need to upate the readme to show these types, the command line arguments, and the main code.
+
+13. we're going to create a new python script that uses generate_sample_payloads and a config file that needs to be created. the config file should support adding a list of machines that will need a new json generated for them. create an example config file, then a python script that iterates the config file, and generates the corresponding json by calling the existing python script.
+
+14. [Request interrupted by user for tool use]remove the count option in the config file
+
+15. instead of generate_from_config outputting to file, it needs to publish to an mqtt broker. modify the config to add a section for configuration the connection to the broker. modify the config so that each machine doesn't have a output_dir or filename_prefix but instead has a target topic that will be updated. next update the generate_from_config file to use the config file to: connect to the mqtt broker, iterate the configured machines, and write the new topic specified.
+
+16. rename machine_config.json to publish_config.js and generate_from_config.py to publish_machineid.py
+
+17. when I run publish_machineid.py I get an error from paho-mqtt that says Unsupported callback API version: version 2.0 added a callback_api_version
+
+18. modify the publish_machineid script, each iteration should check if the configured topic ends with MachineIdentificationType. If it does, when publishing the generated json, the outer object wrapper MachineIdentificationType should be removed from the payload before publishing.
+
+19. update the claude and readme files to describe the new functionality and how to use it

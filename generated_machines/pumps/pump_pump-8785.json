@@ -1,0 +1,28 @@
+{
+  "MachineIdentificationType": {
+    "AssetId": "PUMP-8785",
+    "ComponentName": "Pump PUMP-8785",
+    "DefaultInstanceBrowseName": "/Pump/PUMP-8785",
+    "DeviceClass": "Industrial Pump",
+    "DeviceManual": "https://www.ksb.com/manuals/etanorm-65-125",
+    "DeviceRevision": "Rev-3.1",
+    "HardwareRevision": "HW-3.9",
+    "InitialOperationDate": "2017-07-14T16:05:46.032992Z",
+    "Location": "Production Floor A",
+    "Manufacturer": "KSB SE & Co. KGaA",
+    "ManufacturerUri": "https://www.ksb.com",
+    "ProductInstanceUri": "https://www.ksb.com/products/etanorm-65-125",
+    "Model": "Etanorm 65-125",
+    "MonthOfConstruction": 12,
+    "YearOfConstruction": 2015,
+    "PatchIdentifiers": [
+      "PATCH-765"
+    ],
+    "RevisionCounter": 1,
+    "ProductCode": "PC-ETANORM-65-125-658",
+    "SerialNumber": "KSB466591",
+    "SoftwareReleaseDate": "2023-04-17T16:05:46.032992Z",
+    "SoftwareRevision": "SW-4.5.1",
+    "UI Element": "pump_control_panel_pump-8785"
+  }
+}

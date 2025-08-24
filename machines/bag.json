@@ -1,30 +1,26 @@
 {
   "MachineIdentificationType": {
-    "AssetId": "BAG-2476",
-    "ComponentName": "Bag Machine BAG-2476",
-    "DefaultInstanceBrowseName": "/Bag/BAG-2476",
+    "AssetId": "BAG-8294",
+    "ComponentName": "Bag Machine BAG-8294",
+    "DefaultInstanceBrowseName": "/Bag/BAG-8294",
     "DeviceClass": "Industrial Bag Machine",
-    "DeviceManual": "https://www.comexi.com/manuals/f2-mb-flexo",
-    "DeviceRevision": "Rev-1.5",
+    "DeviceManual": "https://www.comexi.com/manuals/ct-flexo-ci8",
+    "DeviceRevision": "Rev-5.5",
     "HardwareRevision": "HW-2.4",
-    "InitialOperationDate": "2023-07-29T15:40:03.394596Z",
-    "Location": "Manufacturing Line 1",
+    "InitialOperationDate": "2025-06-26T16:01:31.357926Z",
+    "Location": "Production Floor A",
     "Manufacturer": "Comexi Group",
     "ManufacturerUri": "https://www.comexi.com",
-    "ProductInstanceUri": "https://www.comexi.com/products/f2-mb-flexo",
-    "Model": "F2 MB flexo",
-    "MonthOfConstruction": 4,
-    "YearOfConstruction": 2011,
-    "PatchIdentifiers": [
-      "PATCH-392",
-      "PATCH-708",
-      "PATCH-354"
-    ],
-    "RevisionCounter": 0,
-    "ProductCode": "PC-F2-MB-FLEXO-257",
-    "SerialNumber": "COM387937",
-    "SoftwareReleaseDate": "2025-05-18T15:40:03.394599Z",
-    "SoftwareRevision": "SW-4.0.2",
-    "UI Element": "bag_control_panel_bag-2476"
+    "ProductInstanceUri": "https://www.comexi.com/products/ct-flexo-ci8",
+    "Model": "CT flexo CI8",
+    "MonthOfConstruction": 12,
+    "YearOfConstruction": 2016,
+    "PatchIdentifiers": [],
+    "RevisionCounter": 1,
+    "ProductCode": "PC-CT-FLEXO-CI8-952",
+    "SerialNumber": "COM582736",
+    "SoftwareReleaseDate": "2024-09-20T16:01:31.357926Z",
+    "SoftwareRevision": "SW-9.4.6",
+    "UI Element": "bag_control_panel_bag-8294"
   }
 }
